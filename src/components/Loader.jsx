@@ -22,7 +22,7 @@ export function Loader() {
         <span className="loader-light light-two" />
         <div className="loader-logo-shell">
           <span className="loader-scan" />
-          <img src={`${import.meta.env.BASE_URL}assets/clint-logo-blue.png`} alt="" />
+          <img src="assets/clint-logo-blue.png" alt="" />
         </div>
       </div>
     </div>

@@ -8,12 +8,12 @@ export const profile = {
   phone: "+1 5627133206",
   github: "https://github.com/clintdmello12",
   linkedin: "https://www.linkedin.com/in/clint-michael-d/",
-  resume: `${import.meta.env.BASE_URL}documents/Clint-Dmello-SRE-Final.pdf`,
+  resume: "documents/Clint-Dmello-SRE-Final.pdf",
   summary:
     "I work at the intersection of software engineering, SRE, and customer-facing delivery: building scalable systems, keeping them reliable in production, and translating technical work into business outcomes.",
 };
 
-const getAssetPath = (path) => `${import.meta.env.BASE_URL}assets/${path}`;
+const getAssetPath = (path) => `assets/${path}`;
 
 export const experience = [
   {
