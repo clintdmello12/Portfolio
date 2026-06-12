@@ -19,7 +19,7 @@ export function About() {
           viewport={{ once: true, amount: 0.35 }}
           transition={{ duration: 0.6 }}
         >
-          <img src="/Portfolio/assets/clint-outdoor.webp" alt="Clint Michael Dmello outdoors" />
+          <img src={`${import.meta.env.BASE_URL}assets/clint-outdoor.webp`} alt="Clint Michael Dmello outdoors" />
           <div>
             <h3>{profile.name}</h3>
             <p>{profile.role}</p>

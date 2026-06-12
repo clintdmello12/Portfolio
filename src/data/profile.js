@@ -8,31 +8,33 @@ export const profile = {
   phone: "+1 5627133206",
   github: "https://github.com/clintdmello12",
   linkedin: "https://www.linkedin.com/in/clint-michael-d/",
-  resume: "/Portfolio/documents/Clint-Dmello-SRE-Final.pdf",
+  resume: `${import.meta.env.BASE_URL}documents/Clint-Dmello-SRE-Final.pdf`,
   summary:
     "I work at the intersection of software engineering, SRE, and customer-facing delivery: building scalable systems, keeping them reliable in production, and translating technical work into business outcomes.",
 };
+
+const getAssetPath = (path) => `${import.meta.env.BASE_URL}assets/${path}`;
 
 export const experience = [
   {
     company: "ServiceNow",
     duration: "July 2024 - Present",
     role: "Software Engineer",
-    logo: "/Portfolio/assets/logos/servicenow.png",
+    logo: getAssetPath("logos/servicenow.png"),
     logoText: "SN",
   },
   {
     company: "Beach Building Services, CSULB",
     duration: "March 2023 - December 2024",
     role: "Student Assistant",
-    logo: "/Portfolio/assets/logos/csulb.png",
+    logo: getAssetPath("logos/csulb.png"),
     logoText: "CSULB",
   },
   {
     company: "Infinite Infolab",
     duration: "January 2020 - December 2022",
     role: "Software Engineer",
-    logo: "/Portfolio/assets/logos/infinite-infolab.png",
+    logo: getAssetPath("logos/infinite-infolab.png"),
     logoText: "II",
   },
 ];
@@ -41,45 +43,45 @@ export const skills = [
   {
     group: "Engineering",
     items: [
-      { name: "Java", logo: "/Portfolio/assets/logos/java.svg", logoText: "Jv" },
-      { name: "Spring Boot", logo: "/Portfolio/assets/logos/spring.svg", logoText: "Sp" },
-      { name: "Python", logo: "/Portfolio/assets/logos/python.svg", logoText: "Py" },
-      { name: "Node.js", logo: "/Portfolio/assets/logos/nodejs.svg", logoText: "Nd" },
-      { name: "React", logo: "/Portfolio/assets/logos/react.svg", logoText: "Re" },
-      { name: "REST APIs", logo: "/Portfolio/assets/logos/fastapi.svg", logoText: "API" },
+      { name: "Java", logo: getAssetPath("logos/java.svg"), logoText: "Jv" },
+      { name: "Spring Boot", logo: getAssetPath("logos/spring.svg"), logoText: "Sp" },
+      { name: "Python", logo: getAssetPath("logos/python.svg"), logoText: "Py" },
+      { name: "Node.js", logo: getAssetPath("logos/nodejs.svg"), logoText: "Nd" },
+      { name: "React", logo: getAssetPath("logos/react.svg"), logoText: "Re" },
+      { name: "REST APIs", logo: getAssetPath("logos/fastapi.svg"), logoText: "API" },
     ],
   },
   {
     group: "Cloud & Platform",
     items: [
-      { name: "AWS", logo: "/Portfolio/assets/logos/aws.svg", logoText: "AWS" },
-      { name: "Docker", logo: "/Portfolio/assets/logos/docker.svg", logoText: "Dk" },
-      { name: "Kubernetes", logo: "/Portfolio/assets/logos/kubernetes.svg", logoText: "K8s" },
-      { name: "Terraform", logo: "/Portfolio/assets/logos/terraform.svg", logoText: "Tf" },
-      { name: "Helm", logo: "/Portfolio/assets/logos/helm.svg", logoText: "Hm" },
-      { name: "Linux", logo: "/Portfolio/assets/logos/linux.svg", logoText: "Ln" },
+      { name: "AWS", logo: getAssetPath("logos/aws.svg"), logoText: "AWS" },
+      { name: "Docker", logo: getAssetPath("logos/docker.svg"), logoText: "Dk" },
+      { name: "Kubernetes", logo: getAssetPath("logos/kubernetes.svg"), logoText: "K8s" },
+      { name: "Terraform", logo: getAssetPath("logos/terraform.svg"), logoText: "Tf" },
+      { name: "Helm", logo: getAssetPath("logos/helm.svg"), logoText: "Hm" },
+      { name: "Linux", logo: getAssetPath("logos/linux.svg"), logoText: "Ln" },
     ],
   },
   {
     group: "Reliability",
     items: [
-      { name: "SRE", logo: "/Portfolio/assets/logos/googlecloud.svg", logoText: "SRE" },
-      { name: "CI/CD", logo: "/Portfolio/assets/logos/githubactions.svg", logoText: "CI" },
-      { name: "Jenkins", logo: "/Portfolio/assets/logos/jenkins.svg", logoText: "Jk" },
-      { name: "GitHub Actions", logo: "/Portfolio/assets/logos/githubactions.svg", logoText: "GH" },
-      { name: "Prometheus", logo: "/Portfolio/assets/logos/prometheus.svg", logoText: "Pr" },
-      { name: "ELK", logo: "/Portfolio/assets/logos/elastic.svg", logoText: "ELK" },
+      { name: "SRE", logo: getAssetPath("logos/googlecloud.svg"), logoText: "SRE" },
+      { name: "CI/CD", logo: getAssetPath("logos/githubactions.svg"), logoText: "CI" },
+      { name: "Jenkins", logo: getAssetPath("logos/jenkins.svg"), logoText: "Jk" },
+      { name: "GitHub Actions", logo: getAssetPath("logos/githubactions.svg"), logoText: "GH" },
+      { name: "Prometheus", logo: getAssetPath("logos/prometheus.svg"), logoText: "Pr" },
+      { name: "ELK", logo: getAssetPath("logos/elastic.svg"), logoText: "ELK" },
     ],
   },
   {
     group: "AI & Data",
     items: [
-      { name: "RAG", logo: "/Portfolio/assets/logos/anthropic.svg", logoText: "RAG" },
-      { name: "Claude API", logo: "/Portfolio/assets/logos/anthropic.svg", logoText: "AI" },
-      { name: "Vector Search", logo: "/Portfolio/assets/logos/neo4j.svg", logoText: "VS" },
-      { name: "PostgreSQL", logo: "/Portfolio/assets/logos/postgresql.svg", logoText: "PG" },
-      { name: "MongoDB", logo: "/Portfolio/assets/logos/mongodb.svg", logoText: "MDB" },
-      { name: "Redis", logo: "/Portfolio/assets/logos/redis.svg", logoText: "Rd" },
+      { name: "RAG", logo: getAssetPath("logos/anthropic.svg"), logoText: "RAG" },
+      { name: "Claude API", logo: getAssetPath("logos/anthropic.svg"), logoText: "AI" },
+      { name: "Vector Search", logo: getAssetPath("logos/neo4j.svg"), logoText: "VS" },
+      { name: "PostgreSQL", logo: getAssetPath("logos/postgresql.svg"), logoText: "PG" },
+      { name: "MongoDB", logo: getAssetPath("logos/mongodb.svg"), logoText: "MDB" },
+      { name: "Redis", logo: getAssetPath("logos/redis.svg"), logoText: "Rd" },
     ],
   },
 ];
@@ -120,21 +122,21 @@ export const education = [
     school: "California State University, Long Beach",
     degree: "MS, Computer Science",
     duration: "January 2023 - December 2024",
-    logo: "/Portfolio/assets/logos/csulb.png",
+    logo: getAssetPath("logos/csulb.png"),
     logoText: "CSULB",
   },
   {
     school: "Fr. Conceicao Rodrigues College of Engineering",
     degree: "BE, Information Technology",
     duration: "2018 - 2021",
-    logo: "/Portfolio/assets/logos/frcrce.png",
+    logo: getAssetPath("logos/frcrce.png"),
     logoText: "FCRCE",
   },
   {
     school: "Bhausaheb Vartak Polytechnic, Vasai",
     degree: "Diploma, Computer Technology",
     duration: "2015 - 2018",
-    logo: "/Portfolio/assets/logos/bvp.png",
+    logo: getAssetPath("logos/bvp.png"),
     logoText: "BVP",
   },
 ];
@@ -142,16 +144,16 @@ export const education = [
 export const certifications = [
   {
     name: "AWS Certified Solutions Architect - Associate",
-    logo: "/Portfolio/assets/logos/aws.svg",
+    logo: getAssetPath("logos/aws.svg"),
     logoText: "AWS",
   },
   {
     name: "Introduction to DevOps and Site Reliability Engineering",
-    logo: "/Portfolio/assets/logos/linux.svg",
+    logo: getAssetPath("logos/linux.svg"),
     logoText: "SRE",
   },
-  { name: "Certified BigID Associate Admin", logo: "/Portfolio/assets/logos/bigid.png", logoText: "BigID" },
-  { name: "Certified BigID Associate Operator", logo: "/Portfolio/assets/logos/bigid.png", logoText: "BigID" },
-  { name: "Certified Data Monetizer", logo: "/Portfolio/assets/logos/ydc.png", logoText: "YDC" },
+  { name: "Certified BigID Associate Admin", logo: getAssetPath("logos/bigid.png"), logoText: "BigID" },
+  { name: "Certified BigID Associate Operator", logo: getAssetPath("logos/bigid.png"), logoText: "BigID" },
+  { name: "Certified Data Monetizer", logo: getAssetPath("logos/ydc.png"), logoText: "YDC" },
 ];
 
