@@ -19,7 +19,7 @@ export function Navbar() {
     <header className={`nav-shell ${scrolled ? "is-scrolled" : ""}`}>
       <a className="brand" href="#home" aria-label="Clint Michael Dmello home">
         <span className="brand-logo">
-          <img src="/assets/clint-logo-blue.png" alt="" />
+          <img src="/Portfolio/assets/clint-logo-blue.png" alt="" />
         </span>
         <span>{profile.name}</span>
       </a>
